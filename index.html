@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>User form</title>
+</head>
+
+<body>
+
+    <header id="container">
+        <div id="description"></div>
+        <h1 id="title">User form</h1>
+        <p><i>Fill in all the fields below any doubt <a href="#">Help</a></i> </p>
+        </div>
+    </header>
+
+    <form id="survey-form" action="#" method="POST">
+
+        <p>
+            <i class="fas fa-user"></i>
+            <input type="text" name="name" id="name-label" placeholder="Name" required>
+
+        </p>
+        <p>
+            <i class="fas fa-user"></i>
+            <input type="text" name="lastname" id="lastname-label" placeholder="Last name" required>
+
+        </p>
+
+
+        <p>
+            <i class="fas fa-envelope-open"></i>
+            <input type="email" name="email" id="email-label" placeholder="Email">
+
+        </p>
+        <p>
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </p>
+
+        <p>
+
+            <input type="number" name="age" id="age" min="1" max="99" placeholder="Age">
+        </p>
+
+        <select name="language">
+            <option value="opcion" selected>---Select option---</option>
+            <option value="c++">C ++</option>
+            <option value="c#">C #</option>
+            <option value="javascript">Javascript</option>
+            <option value="php">Php</option>
+            <option value="reactjs">Reactjs</option>
+            <option value="nodejs">Node js</option>
+        </select>
+        <br>
+
+        <label class="estilo-checkbox" for="junior">
+            <input type="checkbox" name="junior" value="junior">
+            Junior
+        </label>
+        <label class="estilo-checkbox" for="senior">
+            <input type="checkbox" name="senior" value="senior">
+            Senior
+        </label>
+        <br>
+        <textarea name="message"  cols="30" rows="10"></textarea>
+        <br>
+        <input dir="submit" type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
